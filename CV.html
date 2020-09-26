@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Le Doctype est une ligne de code dissant aux navigateur comment interpréter le document ou page web -->
+<html lang="fr">
+<!-- Indique la langue de traitement -->
+
+<head>
+	<!-- fournit des informations générales (métadonnées) sur le document,(son titre ,liens ou des définitions vers des scripts et feuilles de style -->
+	<meta charset="UTF-8" />
+	<!-- Designe le type d'encodage choisi L'UTF-8 pour représenter le texte Unicode dans les pages Web -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Ce lien me permet de crée une feuille de style et d'appliquer du CSS dans ma page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- viewport correspond a l'espace visible de notre page web , concernant le content="width=device-width, cela me permet d'initialiser de notre viewport avec cel du device c'est a dire que la largeur du viewport sur smartphone sera la largeur du smartphone , sur tablette la largeur de la tablette et sur deskotp la largeur de ce dernier et initial-scale=1" definis le niveau de zoom initial, à chaque fois qu on utlisera bootstrap dans un projet ce meta tag sera necessaire -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Ce Script me permet d'importer des icônes dans ma page -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- Lien pour le css du cdn de bootstrap -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+	<!-- Ce lien me permet d'utiliser la police personnalisé Raleway via google -->
+	<link rel="shortcut icon" type="image/ico" href="Photos/favicone.ico" />
+	<!-- Création d'une favicon -->
+	<title>Mon Cv</title> <!-- définit le titre de mon document -->
+</head>
+
+<body>
+	<div class="container col-2 partie-gauche">
+		<img src="Photos/Photo_de_profil.jpg" class="img-responsive" id="photo" alt="photo david chatton">
+		<section class="Contact">
+			<h3>Contact</h3>
+			<div class="Infos">
+				<p>Adresse<br> Paris,France</p>
+				<p>Téléphone<br>
+					06 00 00 00 00</p>
+				<p>Email<br>
+					nom@email.com</p>
+				<p>Site web<br>
+					www.name.com</p>
+				<p>Skype<br>
+					@nom_dutilisateur
+				</p>
+			</div>
+		</section>
+		<div class="A-propos-de-moi">
+
+			<h3>A propos de moi</h3>
+			<p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
+
+		</div>
+		<div class="icone-en-bas">
+			<article class="loisir">
+				<h3>Loisir</h3>
+				<div class="container-icones">
+					<div class="cercle-icone">
+						<i class="fas fa-gamepad"></i>
+					</div>
+					<!--Different logos choisit sur https://fontawesome.com/-->
+					<div class="cercle-icone">
+						<i class="fab fa-twitch"></i>
+					</div>
+					<div class="cercle-icone">
+						<i class="fas fa-film"></i>
+					</div>
+				</div>
+			</article>
+		</div>
+
+	</div>
+	<div class="container col-10 partie-droite">
+		<h1 class="Titre"><strong>David</strong> Chatton</h1>
+		<h2 class="sous-titre">Développeur web freelance</h2>
+		<hr class="souligner">
+		<div class="section-titre-formation">
+			<i class="fas fa-graduation-cap icone_jaune icones-titre"></i> <span class="Formation">
+				Formation</span>
+		</div>
+		<hr>
+		<div class="Container-Formation">
+			<div class="Bloc-Formation">
+				<div class="Date-container">
+					<div class="fa fa-dot-circle-o icone_jaune"></div>
+					<div class="Date-Ville">
+						<p>2016 - 2017</p>
+						<p>Paris</p>
+					</div>
+				</div>
+				<div class="Description-Formation">
+					<p class="Openclassrooms">Openclassrooms</p>
+					<p>Junior Developper Web</p>
+					<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
+				</div>
+			</div>
+			<div class="Bloc-Formation">
+				<div class="Date-container">
+					<div class="fas fa-circle icone_jaune"></div>
+					<div class="Date-Ville">
+						<p>2014 - 2016</p>
+						<p>Orléans</p>
+					</div>
+				</div>
+				<div class="Description-Formation">
+					<p class="Openclassrooms">UNIVERSITY OF LOREM</p>
+					<p>Graphic Designer</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
+				</div>
+			</div>
+		</div>
+		<div class="section-titre-Experiences">
+			<i class="fas fa-briefcase icone_jaune icones-titre"></i> <span class="Experiences-Professionnelles">Expériences Professionnelles</span>
+		</div>
+		<hr>
+		<div class="Container-Formation">
+			<div class="Bloc-Formation">
+				<div class="Date-container">
+					<div class="fa fa-dot-circle-o icone_jaune"></div>
+					<div class="Date-Ville">
+						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+						<p>Paris</p>
+					</div>
+				</div>
+				<div class="Description-Formation">
+					<p class="Openclassrooms">Design inc.</p>
+					<p>Web Developper</p>
+					<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
+				</div>
+			</div>
+			<div class="Bloc-Formation">
+				<div class="Date-container">
+					<div class="fas fa-circle icone_jaune"></div>
+					<div class="Date-Ville">
+						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+						<p>Paris</p>
+					</div>
+				</div>
+				<div class="Description-Formation">
+					<p class="Openclassrooms">Design inc.</p>
+					<p>Graphic Designer</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
+				</div>
+			</div>
+			<div class="Bloc-Formation">
+				<div class="Date-container">
+					<div class="fas fa-circle icone_jaune"></div>
+					<div class="Date-Ville">
+						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+						<p>Paris</p>
+					</div>
+				</div>
+				<div class="Description-Formation">
+					<p class="Openclassrooms">Design inc.</p>
+					<p>Graphic Designer</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
+				</div>
+			</div>
+		</div>
+		<div class="section-titre-Recommandation">
+				<i class="fas fa-pencil-alt icone_jaune icones-titre"></i><span class="Recommandation">Recommandation</span>
+				<hr class="hr-recommandation">
+			</div>
+			<div class="recommandation-global">
+				<div class="recommandation-gauche">
+					<p class="nom-recommandation">MAXIME KIERMAN</p>
+					<p class="nom-recommandation">Directeur, Mon agence</p>
+					<p class="nom-recommandation">Téléphone :</p>
+					<p>Email : name@email.com</p>
+
+				</div>
+				<div class="recommandation-droite">
+
+					<p class="nom-recommandation">MAXIME KIERMAN</p>
+					<p class="nom-recommandation">Directeur, Mon agence</p>
+					<p class="nom-recommandation">Téléphone :</p>
+					<p>Email : name@email.com</p>
+
+				</div>
+			</div>
+	</div>
+
+</body>
+
+</html>
