@@ -1,73 +1,81 @@
 body 
 {
 	display: flex;
-	padding: 0;
-	margin: 0;
-	height: 162vh;/* pour permettre a mon body d'englober ma page web*/
+	/* pour gerer l'affichage et me permettre d'avoir un coté gauche et droit côte à côte */
+	min-height: 100%;/* pour permettre a mon body d'englober ma page web*/
+	font-family: 'Roboto Slab', serif;
+	/* Défini la police utilise */
+	margin: 0%
+	/* Me permet de ne pas avoir de marge */
 }
 #photo 
 {
 	
-	border-radius: 50%;/*pour définir un bord arrondis sur ma photo*/
-	width: 75%;/*pour gérer la largeur*/
-	margin: 10%;/*pour gérer mes margin pour le positionement*/
-	background-color: #FECA07;/* pour mettre une couleur de fond*/
+	border-radius: 50%;
+	/*pour définir un bord arrondis sur ma photo*/
+	width: 100%;
+	/*pour gérer la largeur*/
+	margin:5% 0% 5% 0%;
+	/*pour gérer mes margin pour le positionement*/
+	background-color: #FECA07;
+	/* pour mettre une couleur de fond*/
+	
 }
 h3 
 {
-	text-align: center;/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
+	text-align: center;
+	/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
 	background-color: #404040;
-	color:#FECA07 !important;/* pour ignorer la valeur inherit  et appliquer ma couleur sur mes h3*/
-	padding: 5% 0% 5% 0%;/*pour gérer mes padding pour le positionement*/	
+	color:#FECA07; 
+	/* pour appliquer ma couleur sur mes h3 */
+	padding: 5% 0% 5% 0%;
+	/*pour gérer mes padding pour le positionement*/
+	font-family: 'Cookie', cursive;
 }
 .partie-gauche
 {
-	height: 100%;
+	width: 15%;
 	background-color:#FECA07;
-	margin-left:0%;
-	margin-right:0%;
-	padding-left:0%!important;
-	padding-right:0%!important;
 	font-size: 1rem;
+	
 }
 .partie-droite
 {
 	height: 100%;
-	padding-left:0%!important;
-	padding-right:0%!important;
-	
+	width: 100%
 }
 .Infos
 {
 	margin-left: 10%;
+	/* Pour gerer la marge gauche */
     margin-top: 1.5rem;
+	/* Pour gerer la marge en haut */
     margin-bottom: 1.5rem;
-	
+	/* Pour gerer la marge en bas */
 }
 .A-propos-de-moi
 {
 	display: flex;
 	flex-direction: column;
+	/* définit la façon dont les éléments flexibles sont placés dans un conteneur flexible dans ce cas présent les mettre en colonne */
 }
+
 .A-propos-de-moi p 
 {
     margin-left: 3rem;
-    margin-right: 3rem;
+    margin-right: 3rem;  
+	/* Pour gerer la marge droite */
     margin-top: 1.5rem;
-	padding-bottom: 90%;
-}
-.icone-en-bas 
-{
-    flex: 0;
+	padding-bottom: 90%; 
+	/* Pour gerer le padding en bas */
 }
 .container-icones 
 {
-    width: 100%;
+ 
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* indique la façon dont l'espace doit être réparti entre les éléments selon l'axe principal */
 	padding-top: 5rem;
-	font-weight: 900;
 	font-size: 2.5em; 
 }
 .cercle-icone 
@@ -84,8 +92,8 @@ h3
 
 .Titre 
 {
-    margin: 0% 0% 0% 5%;
-    padding-top: 7%;
+    margin: 0% 0% 0% 10%;
+    padding-top: 10%;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
@@ -95,21 +103,23 @@ h3
 }
 strong 
 {
- color: #FECA07!important;
+ color: #FECA07;
 }
 .section-titre-formation 
 {
-	margin: 6.3% 5% 0;
+	margin: 12.5% 10% 0;
 }
 .sous-titre 
 {
-	margin: 0% 0% 0% 5%;
+	margin: 1% 0% 0% 10%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 
 }
 .souligner 
 {
     background-color: #FECA07;
-    margin: 0% 0% 2% 5%;
+    margin: 0% 0% 2% 10%;
     width: 5.5%;
     height: 0.1rem;
 }
@@ -124,9 +134,9 @@ strong
 hr 
 {
 	background-color: #FECA07;
-	width: 85%;
+	width: 80%;
 	height: 0.1rem;
-	margin: 0.5% 0% 0% 4.5%;
+	margin: 1% 0% 0% 10%;
 	border: none;
 }
 .hr-recommandation
@@ -141,13 +151,13 @@ hr
 {
 	display: flex;
     flex-direction: column;
-	margin: 2% 5% 0;
+	margin: 5% 10% 5% 5.5%;
 }
 .section-titre-Experiences,.section-titre-formation,.section-titre-Recommandation
 {
 	font-size: 2em;
-	margin-right: 10%;
 	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
 }
 .section-titre-Experiences 
 {
@@ -156,6 +166,7 @@ hr
 .Bloc-Formation
 {
 	display: flex;
+	margin-left: 7%;
     
 }
 .Date-container
@@ -165,6 +176,7 @@ hr
     flex-wrap: nowrap;
     align-content: flex-start;
     flex: 0 0 12rem;
+	
 }
 .Date-Ville
 {
@@ -179,7 +191,13 @@ hr
 }
 .Description-Formation
 {
-	margin: 0% 0% 0% 15%; 
+	margin: 0% 0% 0% 10%; 
+	display: flex;
+	flex-direction:column;
+}
+.Description-Formation-Experiences
+{
+	margin: 0% 0% 0% 10%; 
 	display: flex;
 	flex-direction:column;
 }
@@ -222,20 +240,261 @@ hr
     font-weight: 500;
     font-size: 1rem;
 }
-
-
-
-@media all and (max-width:650px)
+.Contact-Mobile
 {
-	.body 
+	display: none;
+}
+.Infos-Mobile
+{
+	display: none;
+}
+.A-propos-de-moi-Mobile
+{
+	display: none;
+}
+.icone-en-bas-Mobile
+{
+	display: none;
+}
+.loisir-Mobile
+{
+	display: none;
+}
+.container-icones-mobile
+{
+	display: none;
+}
+.cercle-icone-mobile
+{
+	display: none;
+}	
+
+@media only screen and (max-width: 650px)
+{
+	body 
 	{
-		height: 162vh;
-		font-size: 15px;
+		
+		display: flex;
+		background-color: #FECA07;
+		
 	}
 	.Titre
 	{
 		width: 100%;
-		font-size: 1.2em;
+		font-size: 2em;
+		margin: 0;
+		font-weight: bolder;
+		padding: 0;
+	}
+	.sous-titre
+	{
+		margin-left: -4px;
+    	font-size: 1.5em;
+    	font-weight: bolder;
+		text-align: center;	
+	}
+	.souligner
+	{
+		display: none;
+	}
+	
+	
+	
+	
+	
+	.background-header-color
+	{
+		background-color: #404040;
+		padding: 5% 0% 10% 0%;
+	}
+	
+	
+	
+	
+	.background-image-color
+	{
+		background-color: white;	
+	}
+	
+	
+	
+	
+	
+	
+	
+	#photo 
+	{
+	
+	border-radius: 50%;/*pour définir un bord arrondis sur ma photo*/
+	width: 150px;/*pour gérer la largeur*/
+	margin: 5%;/*pour gérer mes margin pour le positionement*/
+	background-color: #FECA07;/* pour mettre une couleur de fond*/
+	}
+	.responsive-picture
+	{
+		margin: 0 0 30px 0;
+		display: flex;
+    	flex-direction: column-reverse;
+    	justify-content: flex-start;
+    	align-items: center;
+   		box-shadow: none;
+    	text-align: center;
+	}
+	.img-responsive
+	{
+		display: none;
+	}
+	.icones-titre 
+	{
+    margin: 0% 2% 0% 0%;
+    font-size: 20px;
+	}
+	.encadrer
+	{
+		margin: 10px;
+    	padding: 10px;
+    	box-shadow: 0px 0px 8px #90A4AE;
+    	border-radius: 5px;
+		background-color: white;
+	}
+	.Formation
+	{
+		font-size: 20px;
+	}
+	.section-titre-Experiences, .section-titre-formation, .section-titre-Recommandation
+	{	
+		
+		margin: auto;
+		
+	}
+	    
+	
+	.section-titre-formation
+	{
+		margin: 15px auto;
+		align-items: center;
+	}
+	
+	.hr
+	{
+		background-color: #FECA07;
+    	width: 90%;	
+	}
+	.Date-Ville 
+	{
+    	margin-left: 1rem;
+		font-size: 15px;
+	}
+	.Bloc-Formation 
+	{
+    display: flex;
+	}
+	.Description-Formation 
+	{
+    margin: 0% 0% 0% 10%;
+    display: flex;
+    flex-direction: column;
+	}
+	
+	.partie-gauche
+	{
+		display: none;
+	}
+	.partie-droite
+	{
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+	h3
+	{
+		text-align: center;/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
+		background-color: #404040;
+		color:#FECA07;
+		padding: 5% 0% 5% 0%;/*pour gérer mes padding pour le positionement*/
+		margin-top: 1%;
+	}
+	.bas-site-mobile
+	{
+		background-color: #FECA07;
+	}
+	.Contact-Mobile
+	{
+		display: block;
+		text-align: center;
+	}
+	.Infos-Mobile
+	{
+		display: block;
+    	margin-top: 1.5rem;
+    	margin-bottom: 1.5rem;
+		background-color: #FECA07;
+	
+	}
+	.A-propos-de-moi-Mobile
+	{
+		display: block;
+	}
+	.icone-en-bas-Mobile
+	{
+		display: block;
+	}
+	.loisir-Mobile
+	{
+		display: block;
+	}
+	.container-icones-mobile
+	{
+    	display: flex;
+    	justify-content: space-around;
+    	align-items: center;
+		padding: 20px;
+		font-weight: 900;
+		font-size: 2.5em; 
+	}
+	.cercle-icone-mobile
+	{
+
+		display: flex;
+    	justify-content: center;
+   		align-items: center;
+    	height: 4.57rem;
+    	width: 4.57rem;
+    	box-shadow: 0px 0px 8px #404040;
+    	border-radius: 4.57rem;
+    	margin-bottom: 1rem;
+	}	
+}
+
+
+
+
+@media screen and (min-width: 651px) and (max-width: 1024px)
+{
+	body 
+	{
+		display: flex;
+		width: 100%;
+		height: 195vh;	
+	}
+	.partie gauche
+	{
+		width:30%!important;
+		height: 100%;
+
+	}
+	.partie droite
+	{
+		width: 70%!important;
+		height: 100%;
+	}
+	.img-responsive-mobile
+	{
+		display: none;
+	}
+	.Titre
+	{
+		font-size: 2.5em;
 		margin: 0;
 		padding: 2% 0% 0% 0%;
 		font-weight: 500;
@@ -244,31 +503,52 @@ hr
 	.sous-titre
 	{
 		margin-left: -4px;
-    	font-size: 15px;
+    	font-size: 1.5em;
+    	font-weight: 600;
+		text-align: center;	
+	}
+}
+
+@media all and (min-width:1024px) and (max-width:1600px)
+{
+	
+	.img-responsive-mobile
+	{
+		display: none;
+	}
+	
+	
+}
+
+
+
+@media all and (min-width:1601px)
+{
+.Titre
+	{
+		text-align: center;
+		font-size: 75px;
+		margin: 0% 0% 0% 0%;
+	}
+.sous-titre
+	{
+		margin-left: -4px;
+    	font-size: 43px;
     	font-weight: 600;
 		text-align: center;	
 	}
 	.souligner
 	{
-		text-align: center;
+		display: none;
+	}
+	.section-titre
+	{
+		text-align: center;	
+	}
+	.img-responsive-mobile
+	{
 		display: none;
 	}
 	
-	.img-responsive
-	{
-		width: 100%;
-		border-radius: 50%;
-		text-align: center;	
-	}
-	.partie-gauche
-	{
-		display: flex;
-    	flex-direction: column;
-    	
-	}
-	.partie-droite
-	{
-		margin: 0%!important;
-		text-align: center;
-	}
+	
 }

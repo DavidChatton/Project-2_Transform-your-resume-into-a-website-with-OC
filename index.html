@@ -14,10 +14,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Ce Script me permet d'importer des icônes dans ma page -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<!-- Lien pour le css du cdn de bootstrap -->
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-	<!-- Ce lien me permet d'utiliser la police personnalisé Raleway via google -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Cookie&family=David+Libre:wght@500&family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<!-- Ce lien me permet d'utiliser les polices personnalisées Roboto Slab,Cookie,Raleway,David Libre via google -->
 	<link rel="shortcut icon" type="image/ico" href="Photos/favicone.ico" />
 	<!-- Création d'une favicon -->
 	<title>Mon Cv</title> <!-- définit le titre de mon document -->
@@ -25,9 +24,11 @@
 
 <body>
 	<div class="container col-2 partie-gauche">
-	<figure class="responsive-picture">
-		<img src="Photos/Photo_de_profil.jpg" class="img-responsive" id="photo" alt="photo david chatton">
-	</figure>
+		<!-- POUR ME PERMETTRE DE GERER LA PARTIE GAUCHE DE MON SITE -->
+		<figure class="responsive-picture">
+			<img src="Photos/Photo_de_profil.jpg" class="img-responsive" id="photo" alt="photo david chatton">
+		</figure>
+		<!-- POUR GERER MON IMAGE -->
 		<section class="Contact">
 			<h3>Contact</h3>
 			<div class="Infos">
@@ -44,21 +45,20 @@
 			</div>
 		</section>
 		<div class="A-propos-de-moi">
-
 			<h3>A propos de moi</h3>
 			<p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-
 		</div>
 		<div class="icone-en-bas">
+			<!-- POUR GERER MES LOGOS -->
 			<article class="loisir">
 				<h3>Loisir</h3>
 				<div class="container-icones">
 					<div class="cercle-icone">
 						<i class="fas fa-gamepad"></i>
 					</div>
-					<!--Different logos choisit sur https://fontawesome.com/-->
 					<div class="cercle-icone">
 						<i class="fab fa-twitch"></i>
+						<!--Different logos choisit sur https://fontawesome.com/-->
 					</div>
 					<div class="cercle-icone">
 						<i class="fas fa-film"></i>
@@ -66,97 +66,110 @@
 				</div>
 			</article>
 		</div>
-
 	</div>
 	<div class="container col-10 partie-droite">
-		<h1 class="Titre"><strong>David</strong> Chatton</h1>
-		<h2 class="sous-titre">Développeur web freelance</h2>
-		<img src="Photos/Photo_de_profil.jpg" class="img-responsive-mobile" id="photo" alt="photo david chatton">
+		<!-- POUR ME PERMETTRE DE GERER LA PARTIE DROITE DE MON SITE -->
+		<div class="background-header-color">
+			<!-- POUR GERER LA COULEUR DE FOND DE MON HEADER SUR MOBILE -->
+			<h1 class="Titre"><strong>David</strong> Chatton</h1>
+			<h2 class="sous-titre">Développeur web freelance</h2>
+		</div>
+		<div class="background-image-color">
+			<!-- POUR GERER LA COULEUR DE FOND DE MON IMAGE SUR MOBILE -->
+			<img src="Photos/Photo_de_profil.jpg" class="img-responsive-mobile" id="photo" alt="photo david chatton">
+			<!-- UNE PHOTO DEDIER AU MODE MOBILE -->
+		</div>
 		<hr class="souligner">
-		<div class="section-titre-formation">
-			<i class="fas fa-graduation-cap icone_jaune icones-titre"></i> <span class="Formation">
-				Formation</span>
-		</div>
-		<hr>
-		<div class="Container-Formation">
-			<div class="Bloc-Formation">
-				<div class="Date-container">
-					<div class="fa fa-dot-circle-o icone_jaune"></div>
-					<div class="Date-Ville">
-						<p>2016 - 2017</p>
-						<p>Paris</p>
+		<section class="encadrer">
+			<!-- POUR GERER L ENCADREMENT DE MON SITE ET DE SA COULEUR SUR MOBILE-->
+			<div class="section-titre-formation">
+				<i class="fas fa-graduation-cap icone_jaune icones-titre"></i> <span class="Formation">
+					Formation</span>
+			</div>
+			<hr>
+			<div class="Container-Formation">
+				<div class="Bloc-Formation">
+					<div class="Date-container">
+						<div class="fa fa-dot-circle-o icone_jaune"></div>
+						<div class="Date-Ville">
+							<p>2016 - 2017</p>
+							<p>Paris</p>
+						</div>
+					</div>
+					<div class="Description-Formation">
+						<p class="Openclassrooms">Openclassrooms</p>
+						<p>Junior Developper Web</p>
+						<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
 					</div>
 				</div>
-				<div class="Description-Formation">
-					<p class="Openclassrooms">Openclassrooms</p>
-					<p>Junior Developper Web</p>
-					<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
-				</div>
-			</div>
-			<div class="Bloc-Formation">
-				<div class="Date-container">
-					<div class="fas fa-circle icone_jaune"></div>
-					<div class="Date-Ville">
-						<p>2014 - 2016</p>
-						<p>Orléans</p>
+				<div class="Bloc-Formation">
+					<div class="Date-container">
+						<div class="fas fa-circle icone_jaune"></div>
+						<div class="Date-Ville">
+							<p>2014 - 2016</p>
+							<p>Orléans</p>
+						</div>
+					</div>
+					<div class="Description-Formation">
+						<p class="Openclassrooms">UNIVERSITY OF LOREM</p>
+						<p>Graphic Designer</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
 					</div>
 				</div>
-				<div class="Description-Formation">
-					<p class="Openclassrooms">UNIVERSITY OF LOREM</p>
-					<p>Graphic Designer</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
-				</div>
 			</div>
-		</div>
-		<div class="section-titre-Experiences">
-			<i class="fas fa-briefcase icone_jaune icones-titre"></i> <span class="Experiences-Professionnelles">Expériences Professionnelles</span>
-		</div>
-		<hr>
-		<div class="Container-Formation">
-			<div class="Bloc-Formation">
-				<div class="Date-container">
-					<div class="fa fa-dot-circle-o icone_jaune"></div>
-					<div class="Date-Ville">
-						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
-						<p>Paris</p>
+		</section>
+		<section class="encadrer">
+			<div class="section-titre-Experiences">
+				<i class="fas fa-briefcase icone_jaune icones-titre"></i> <span class="Experiences-Professionnelles">Expériences Professionnelles</span>
+			</div>
+			<hr>
+			<div class="Container-Formation">
+				<div class="Bloc-Formation">
+					<div class="Date-container">
+						<div class="fa fa-dot-circle-o icone_jaune"></div>
+						<div class="Date-Ville">
+							<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+							<p>Paris</p>
+						</div>
+					</div>
+					<div class="Description-Formation-Experiences">
+						<p class="Openclassrooms">Design inc.</p>
+						<p>Web Developper</p>
+						<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
 					</div>
 				</div>
-				<div class="Description-Formation-Experiences">
-					<p class="Openclassrooms">Design inc.</p>
-					<p>Web Developper</p>
-					<p class="Loremparagraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
-				</div>
-			</div>
-			<div class="Bloc-Formation">
-				<div class="Date-container">
-					<div class="fas fa-circle icone_jaune"></div>
-					<div class="Date-Ville">
-						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
-						<p>Paris</p>
+				<div class="Bloc-Formation">
+					<div class="Date-container">
+						<div class="fas fa-circle icone_jaune"></div>
+						<div class="Date-Ville">
+							<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+							<p>Paris</p>
+						</div>
+					</div>
+					<div class="Description-Formation-Experiences">
+						<p class="Openclassrooms">Design inc.</p>
+						<p>Graphic Designer</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
 					</div>
 				</div>
-				<div class="Description-Formation-Experiences">
-					<p class="Openclassrooms">Design inc.</p>
-					<p>Graphic Designer</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
-				</div>
-			</div>
-			<div class="Bloc-Formation">
-				<div class="Date-container">
-					<div class="fas fa-circle icone_jaune"></div>
-					<div class="Date-Ville">
-						<p class="Date-Poste">Mars 2018 - Poste actuel</p>
-						<p>Paris</p>
+				<div class="Bloc-Formation">
+					<div class="Date-container">
+						<div class="fas fa-circle icone_jaune"></div>
+						<div class="Date-Ville">
+							<p class="Date-Poste">Mars 2018 - Poste actuel</p>
+							<p>Paris</p>
+						</div>
+					</div>
+					<div class="Description-Formation-Experiences">
+						<p class="Openclassrooms">Design inc.</p>
+						<p>Graphic Designer</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
 					</div>
 				</div>
-				<div class="Description-Formation-Experiences">
-					<p class="Openclassrooms">Design inc.</p>
-					<p>Graphic Designer</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perspiciatis, ut corporis illo inventore minus</p>
-				</div>
 			</div>
-		</div>
-		<div class="section-titre-Recommandation">
+		</section>
+		<section class="encadrer">
+			<div class="section-titre-Recommandation">
 				<i class="fas fa-pencil-alt icone_jaune icones-titre"></i><span class="Recommandation">Recommandation</span>
 				<hr class="hr-recommandation">
 			</div>
@@ -174,11 +187,50 @@
 					<p class="nom-recommandation">Directeur, Mon agence</p>
 					<p class="nom-recommandation">Téléphone :</p>
 					<p>Email : name@email.com</p>
-
 				</div>
 			</div>
-	</div>
+		</section>
+		<div class="bas-site-mobile">
+			<!-- POUR GERER LE BAS DE PAGE DE MON SITE SUR MOBILE -->
+			<section class="Contact-Mobile">
+				<h3>Contact</h3>
+				<div class="Infos-Mobile">
+					<p>Adresse<br> Paris,France</p>
+					<p>Téléphone<br>
+						06 00 00 00 00</p>
+					<p>Email<br>
+						nom@email.com</p>
+					<p>Site web<br>
+						www.name.com</p>
+					<p>Skype<br>
+						@nom_dutilisateur
+					</p>
+				</div>
+			</section>
+			<div class="A-propos-de-moi-Mobile">
 
+				<h3>A propos de moi</h3>
+				<p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
+			</div>
+			<div class="icone-en-bas-Mobile">
+				<article class="loisir-Mobile">
+					<h3>Loisir</h3>
+					<div class="container-icones-mobile">
+						<div class="cercle-icone-mobile">
+							<i class="fas fa-gamepad"></i>
+						</div>
+						<!--Different logos choisit sur https://fontawesome.com/-->
+						<div class="cercle-icone-mobile">
+							<i class="fab fa-twitch"></i>
+						</div>
+						<div class="cercle-icone-mobile">
+							<i class="fas fa-film"></i>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
