@@ -8,7 +8,7 @@ body
 	margin: 0%
 	/* Me permet de ne pas avoir de marge */
 }
-#photo 
+#photo-desktop 
 {
 	
 	border-radius: 50%;
@@ -182,7 +182,7 @@ hr
 {
 	margin-left: 1rem;
 }
-.Openclassrooms
+.Intitule-poste
 {
     text-transform: uppercase;
     color: #4A4A4A;
@@ -269,133 +269,39 @@ hr
 	display: none;
 }	
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 650px)
 {
 	body 
 	{
 		
 		display: flex;
-		background-color: #FECA07;
-		
+		background-color: #FECA07;	
 	}
-	.Titre
-	{
-		width: 100%;
-		font-size: 2em;
-		margin: 0;
-		font-weight: bolder;
-		padding: 0;
-	}
-	.sous-titre
-	{
-		margin-left: -4px;
-    	font-size: 1.5em;
-    	font-weight: bolder;
-		text-align: center;	
-	}
-	.souligner
-	{
-		display: none;
-	}
-	
-	
-	
-	
-	
-	.background-header-color
-	{
-		background-color: #404040;
-		padding: 5% 0% 10% 0%;
-	}
-	
-	
-	
-	
-	.background-image-color
-	{
-		background-color: white;	
-	}
-	
-	
-	
-	
-	
-	
-	
-	#photo 
-	{
-	
-	border-radius: 50%;/*pour définir un bord arrondis sur ma photo*/
-	width: 150px;/*pour gérer la largeur*/
-	margin: 5%;/*pour gérer mes margin pour le positionement*/
-	background-color: #FECA07;/* pour mettre une couleur de fond*/
-	}
-	.responsive-picture
-	{
-		margin: 0 0 30px 0;
-		display: flex;
-    	flex-direction: column-reverse;
-    	justify-content: flex-start;
-    	align-items: center;
-   		box-shadow: none;
-    	text-align: center;
-	}
-	.img-responsive
-	{
-		display: none;
-	}
-	.icones-titre 
-	{
-    margin: 0% 2% 0% 0%;
-    font-size: 20px;
-	}
-	.encadrer
-	{
-		margin: 10px;
-    	padding: 10px;
-    	box-shadow: 0px 0px 8px #90A4AE;
-    	border-radius: 5px;
-		background-color: white;
-	}
-	.Formation
-	{
-		font-size: 20px;
-	}
-	.section-titre-Experiences, .section-titre-formation, .section-titre-Recommandation
-	{	
-		
-		margin: auto;
-		
-	}
-	    
-	
-	.section-titre-formation
-	{
-		margin: 15px auto;
-		align-items: center;
-	}
-	
-	.hr
-	{
-		background-color: #FECA07;
-    	width: 90%;	
-	}
-	.Date-Ville 
-	{
-    	margin-left: 1rem;
-		font-size: 15px;
-	}
-	.Bloc-Formation 
-	{
-    display: flex;
-	}
-	.Description-Formation 
-	{
-    margin: 0% 0% 0% 10%;
-    display: flex;
-    flex-direction: column;
-	}
-	
 	.partie-gauche
 	{
 		display: none;
@@ -406,22 +312,161 @@ hr
 		width: 100%;
 		text-align: center;
 	}
-	h3
+	.background-header-color /*gére le fond derriere le titre */
 	{
-		text-align: center;/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
 		background-color: #404040;
-		color:#FECA07;
-		padding: 5% 0% 5% 0%;/*pour gérer mes padding pour le positionement*/
-		margin-top: 1%;
+		padding: 10% 0% 10% 0%;
 	}
-	.bas-site-mobile
+	.Titre /*gére le h1 "David Chatton" */
+	{
+		width: 100%;
+		font-size: 2em;
+		margin: 0;
+		font-weight: bolder;
+		padding: 0;
+		color: #FECA07;
+	}
+	.sous-titre /*gére le h2 "développeur web freelance" */
+	{
+		margin-left: 0;
+    	font-size: 1.5em;
+		color: white;
+	}
+	.background-image-color /*gere la couleur de fond derriere la photo */
+	{
+		background-color: white;	
+	}
+	#photo-mobile
+	{
+		width: 60%;/*pour gérer la largeur */
+		height: auto;
+		border-radius: 50%;
+	    margin: 5% 0% 5% 0%;
+	}
+	.img-responsive
+	{
+		display: none;
+	}
+	.souligner /*supprimer le soulinager sous "developpeur" */
+	{
+		display: none;
+	}
+	.icones-titre /*gére toute les icones de mon site */
+	{
+    margin: 0% 2% 0% 0%;
+    font-size: 1.3rem;
+	}
+	.encadrer
+	{
+		margin: 3%;
+    	padding: 4%;
+    	box-shadow: 0px 0px 8px #90A4AE;
+    	border-radius: 5px;
+		background-color: white;
+	}
+	.section-titre-formation
+	{
+		margin: 0%;
+	}
+	.Formation
+	{
+		font-size: 0.7em;
+    	font-weight: 600;
+    	color: #404040;
+	}
+	.hr
 	{
 		background-color: #FECA07;
+    	width: 90%;
+    	height: 0.15rem;
+    	border: none;
+	}
+	.Container-Formation /* gere le contenu de mes encadrer*/
+	{
+    display: flex;
+    flex-direction: column;
+    margin:2.5% 5% 2.5% 5%;
+	}
+	.Bloc-Formation 
+	{
+    display: flex;
+	flex-direction: column;
+	margin: 0%;
+	}
+	.Date-container 
+	{
+    	display: flex;
+    	justify-content: center;
+	}
+	.logo-secondaire
+	{
+		display: flex !important;
+    	align-items: center;
+	}
+	.Date-Ville 
+	{
+    	margin-left: 2%;
+    	font-size: 1rem;
+    	display: flex;
+	}
+	.Date
+	{
+		margin-right: 0.3rem
+	}
+	
+	.Description-Formation 
+	{
+		margin: 0%;
+	}
+	.Intitule-poste
+	{
+		text-transform: uppercase;
+    	font-weight: 900;
+    	font-size: 1.2rem;
+    	margin: 0%;
+    	text-align: center;
+	}
+	.Description-Poste
+	{
+		margin: 0%;			
+	}
+	.fa,.fas
+	{
+		font-size: 0.7em;
+	}
+	.section-titre-Experiences
+	{
+		margin: 0%;
+	}
+	
+	.Experiences-Professionnelles
+	{
+		font-size: 0.7em;
+    	font-weight: 600;
+    	color: #404040;
+	}
+	.Description-Formation-Experiences
+	{
+		margin: 0%;
+	}
+	.section-titre-Recommandation
+	{
+		margin: 0%;
+	}
+	#Logo-crayon
+	{
+		margin: 0% 4% 0% 0%;
+	}
+	.Recommandation
+	{
+		font-size: 0.7em;
+    	font-weight: 600;
+    	color: #404040;
+    	margin-right: 5%;
 	}
 	.Contact-Mobile
 	{
 		display: block;
-		text-align: center;
 	}
 	.Infos-Mobile
 	{
@@ -447,9 +492,7 @@ hr
 	{
     	display: flex;
     	justify-content: space-around;
-    	align-items: center;
 		padding: 20px;
-		font-weight: 900;
 		font-size: 2.5em; 
 	}
 	.cercle-icone-mobile
@@ -465,6 +508,52 @@ hr
     	margin-bottom: 1rem;
 	}	
 }
+@media screen and (min-width: 450px) and (max-width: 650px)
+{
+	#photo-mobile
+	{
+	width: 50%;/*pour gérer la largeur */
+	height: auto;
+	margin: 5% 0% 5% 0%;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
