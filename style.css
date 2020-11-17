@@ -309,7 +309,7 @@ hr
 	.partie-droite
 	{
 		height: 100%;
-		width: 100%;
+		min-width: 100%;
 		text-align: center;
 	}
 	.background-header-color /*gére le fond derriere le titre */
@@ -368,11 +368,17 @@ hr
 	{
 		margin: 0%;
 	}
+	#Logo-Diplome
+	{
+		padding-top: 0.2rem;
+    	margin-right: 1rem;
+	}
 	.Formation
 	{
 		font-size: 0.7em;
     	font-weight: 600;
     	color: #404040;
+		margin: 0%;
 	}
 	.hr
 	{
@@ -397,11 +403,32 @@ hr
 	{
     	display: flex;
     	justify-content: center;
+		flex: 0;
 	}
-	.logo-secondaire
+	#Logo-circle-1
 	{
-		display: flex !important;
-    	align-items: center;
+		padding-top: 1.2rem;
+	}
+	#Logo-circle-2
+	{
+		margin-left: -1rem;
+    	margin-right: 0.3rem;
+    	padding-top: 1.25rem;
+	}
+	#circle-icone-1
+	{
+		padding-top: 1.4rem;
+	}
+	#circle-icone-2
+	{
+		margin-left: -1rem;
+    	margin-right: 0.3rem;
+    	padding-top: 1.4rem;
+	}
+	#circle-icone-3
+	{
+		margin-left: -1rem;
+    	padding-top: 1.4rem;
 	}
 	.Date-Ville 
 	{
@@ -412,6 +439,14 @@ hr
 	.Date
 	{
 		margin-right: 0.3rem
+	}
+	.Lieu-1
+	{
+		margin-right: -1rem;
+	}
+	.Lieu-2
+	{
+		margin-right: -1.3rem;
 	}
 	
 	.Description-Formation 
@@ -430,20 +465,33 @@ hr
 	{
 		margin: 0%;			
 	}
+	.Description-Poste-CodiOne
+	{
+		display: flex;
+		justify-content: center;
+	}
 	.fa,.fas
 	{
 		font-size: 0.7em;
 	}
 	.section-titre-Experiences
-	{
-		margin: 0%;
+	{		
+    	margin: 2.5% 0% 2.5% 0%;
+		display: flex;
+    	justify-content: center;
+    	align-items: baseline;
 	}
-	
+	#Logo-Briefcase
+	{
+		margin-left: 20%;
+    	margin-right: -1.5rem;
+	}
 	.Experiences-Professionnelles
 	{
 		font-size: 0.7em;
     	font-weight: 600;
     	color: #404040;
+		margin: 0% 18% 0% 0%;
 	}
 	.Description-Formation-Experiences
 	{
@@ -479,6 +527,10 @@ hr
 	.A-propos-de-moi-Mobile
 	{
 		display: block;
+	}
+	.Descriptif
+	{
+		margin: 0% 5% 0% 5%;
 	}
 	.icone-en-bas-Mobile
 	{
