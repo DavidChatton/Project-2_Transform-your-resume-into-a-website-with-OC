@@ -34,9 +34,10 @@ h3
 }
 .partie-gauche
 {
-	width: 15%;
+	width: 20%;
 	background-color:#FECA07;
 	font-size: 1rem;
+	height: 100%;
 	
 }
 .partie-droite
@@ -367,6 +368,10 @@ hr
 	.section-titre-formation
 	{
 		margin: 0%;
+		margin: 9% 0% 3% 0%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
 	}
 	#Logo-Diplome
 	{
@@ -564,7 +569,7 @@ hr
 {
 	#photo-mobile
 	{
-	width: 50%;/*pour gérer la largeur */
+	width: 40%;/*pour gérer la largeur */
 	height: auto;
 	margin: 5% 0% 5% 0%;
 	}	
