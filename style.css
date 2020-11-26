@@ -237,7 +237,7 @@ hr
 }
 .nom-recommandation 
 {
-    color: #4A4A4A;
+    color:black;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -368,7 +368,7 @@ hr
 	.section-titre-formation
 	{
 		margin: 0%;
-		margin: 9% 0% 3% 0%;
+		margin: 0% 0% 3% 0%;
     	display: flex;
     	align-items: center;
     	justify-content: center;
@@ -443,20 +443,36 @@ hr
 	}
 	.Date
 	{
-		margin-right: 0.3rem
+		margin-right: 0.2rem
 	}
 	.Lieu-1
 	{
-		margin-right: -1rem;
+		margin-right: -1.2rem;
 	}
 	.Lieu-2
 	{
-		margin-right: -1.3rem;
+		margin-right: -1.6rem;
 	}
 	
 	.Description-Formation 
 	{
 		margin: 0%;
+	}
+	#Margin1
+	{
+		margin: 1em 0% 1em 0%;
+	}
+	#Margin2
+	{
+		margin: 1em 0% 1em 0%;
+	}
+	#Margin3
+	{
+		margin: 1em 0% 1em 0%;
+	}
+	.Codi-One
+	{
+		margin:0%;
 	}
 	.Intitule-poste
 	{
@@ -505,21 +521,41 @@ hr
 	.section-titre-Recommandation
 	{
 		margin: 0%;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
 	}
 	#Logo-crayon
 	{
 		margin: 0% 4% 0% 0%;
+	}
+	.recommandation-global
+	{
+		color: black;
 	}
 	.Recommandation
 	{
 		font-size: 0.7em;
     	font-weight: 600;
     	color: #404040;
-    	margin-right: 5%;
+		margin: 0;
+    	
+	}
+	.hr-recommandation
+	{
+		background-color: #FECA07;
+    	width: 80%;
+    	height: 0.1rem;
+    	margin: 2% 0% 0% 12%;
+    	border: none;
 	}
 	.Contact-Mobile
 	{
 		display: block;
+	}
+	h3
+	{
+		font-size: 1.7em;
 	}
 	.Infos-Mobile
 	{
@@ -564,6 +600,17 @@ hr
     	border-radius: 4.57rem;
     	margin-bottom: 1rem;
 	}	
+
+
+
+
+
+
+
+
+
+
+
 }
 @media screen and (min-width: 450px) and (max-width: 650px)
 {
@@ -621,17 +668,16 @@ hr
 	{
 		display: flex;
 		width: 100%;
-		height: 195vh;	
 	}
 	.partie gauche
 	{
-		width:30%!important;
+		width:35%;
 		height: 100%;
 
 	}
 	.partie droite
 	{
-		width: 70%!important;
+		width: 65%;
 		height: 100%;
 	}
 	.img-responsive-mobile
@@ -653,7 +699,34 @@ hr
     	font-weight: 600;
 		text-align: center;	
 	}
+	#photo-mobile
+	{
+	height: auto;
+	margin: 5% 0% 5% 0%;
+	max-width: 100%;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width:1024px) and (max-width:1600px)
 {
