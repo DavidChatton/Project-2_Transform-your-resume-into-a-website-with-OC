@@ -1,325 +1,309 @@
-body 
-{
+body {
 	display: flex;
 	/* pour gerer l'affichage et me permettre d'avoir un coté gauche et droit côte à côte */
-	min-height: 100%;/* pour permettre a mon body d'englober ma page web*/
+	min-height: 100%;
+	/* pour permettre a mon body d'englober ma page web*/
 	font-family: 'Roboto Slab', serif;
 	/* Défini la police utilise */
 	margin: 0%
-	/* Me permet de ne pas avoir de marge */
+		/* Me permet de ne pas avoir de marge */
 }
-#photo-desktop 
-{
-	
-	border-radius: 50%;
-	/*pour définir un bord arrondis sur ma photo*/
-	width: 100%;
-	/*pour gérer la largeur*/
-	margin:5% 0% 5% 0%;
-	/*pour gérer mes margin pour le positionement*/
+.partie-gauche {
+	width: 30%;
 	background-color: #FECA07;
-	/* pour mettre une couleur de fond*/
-	
+	font-size: 1rem;
+	height: 100%;
 }
-h3 
-{
+.responsive-picture {
+	display: flex;
+    justify-content: center;
+}
+#photo-desktop {
+	border-radius: 50%;
+	width: 75%;
+	margin: 3% 12%;
+}
+h3 {
 	text-align: center;
 	/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
 	background-color: #404040;
-	color:#FECA07; 
+	color: #FECA07;
 	/* pour appliquer ma couleur sur mes h3 */
-	padding: 5% 0% 5% 0%;
+	padding: 5% 0%;
 	/*pour gérer mes padding pour le positionement*/
 	font-family: 'Cookie', cursive;
+	font-size: 1.8rem;
 }
-.partie-gauche
-{
-	width: 20%;
-	background-color:#FECA07;
-	font-size: 1rem;
-	height: 100%;
-	
-}
-.partie-droite
-{
-	height: 100%;
-	width: 100%
-}
-.Infos
-{
+.Infos {
 	margin-left: 10%;
-	/* Pour gerer la marge gauche */
-    margin-top: 1.5rem;
-	/* Pour gerer la marge en haut */
-    margin-bottom: 1.5rem;
-	/* Pour gerer la marge en bas */
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
-.A-propos-de-moi
-{
+.A-propos-de-moi {
 	display: flex;
 	flex-direction: column;
 	/* définit la façon dont les éléments flexibles sont placés dans un conteneur flexible dans ce cas présent les mettre en colonne */
 }
 
-.A-propos-de-moi p 
-{
-    margin-left: 3rem;
-    margin-right: 3rem;  
+.A-propos-de-moi p {
+	margin-left: 2.5rem;
+	margin-right: 10%;
 	/* Pour gerer la marge droite */
-    margin-top: 1.5rem;
-	padding-bottom: 90%; 
+	margin-top: 1.5rem;
+	padding-bottom: 146%;
 	/* Pour gerer le padding en bas */
 }
-.container-icones 
-{
- 
-    display: flex;
-    justify-content: space-around;
-    /* indique la façon dont l'espace doit être réparti entre les éléments selon l'axe principal */
-	padding-top: 5rem;
-	font-size: 2.5em; 
-}
-.cercle-icone 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4.57rem;
-    width: 4.57rem;
-    border: 3px solid black;
-    border-radius: 4.57rem;
-    margin-bottom: 1rem;
+
+.container-icones {
+
+	display: flex;
+	justify-content: space-around;
+	/* indique la façon dont l'espace doit être réparti entre les éléments selon l'axe principal */
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-size: 2.5em;
 }
 
-.Titre 
-{
-    margin: 0% 0% 0% 10%;
-    padding-top: 10%;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 50px;
+.cercle-icone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4.57rem;
+	width: 4.57rem;
+	border: 3px solid black;
+	border-radius: 4.57rem;
+	margin-bottom: 1rem;
 }
-strong 
-{
- color: #FECA07;
+.partie-droite {
+	height: 100%;
+	width: 70%
 }
-.section-titre-formation 
-{
-	margin: 12.5% 10% 0;
+.Titre {
+	margin: 0% 0% 0% 10%;
+	padding-top: 10%;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 50px;
 }
-.sous-titre 
-{
+strong {
+	color: #FECA07;
+}
+sous-titre {
 	margin: 1% 0% 0% 10%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
-
 }
-.souligner 
-{
-    background-color: #FECA07;
-    margin: 0% 0% 2% 10%;
-    width: 5.5%;
-    height: 0.1rem;
+.img-responsive-mobile {
+	display: none
 }
-.icone_jaune
-{
-    color: #FECA07;
+.souligner {
+	background-color: #FECA07;
+	margin: 0% 0% 2% 10%;
+	width: 5.5%;
+	height: 0.1rem;
 }
-.icones-titre
-{
+.section-titre-formation {
+	margin: 12.5% 10% 0;
+	display: flex;
+	align-items: baseline;
+}
+.icone_jaune {
+	color: #FECA07;
+}
+.icones-titre {
 	margin: 0% 2% 0% 0%;
 }
-hr 
-{
+.Formation {
+	margin: 0;
+}
+hr {
 	background-color: #FECA07;
 	width: 80%;
 	height: 0.1rem;
 	margin: 1% 0% 0% 10%;
 	border: none;
 }
-.hr-recommandation
-{
+.Container-Formation {
+	display: flex;
+	flex-direction: column;
+	margin: 5% 5% 5% 5.5%;
+}
+.Bloc-Formation {
+	display: flex;
+	margin-left: 6%;
+
+}
+.Date-container {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: nowrap;
+	flex: 0 0 12rem;
+}
+.Date-Ville {
+	margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hr-recommandation {
 	background-color: #FECA07;
 	width: 100%;
 	height: 0.1rem;
 	margin: 1.5% 0% 0% 0%;
 	border: none;
 }
-.Container-Formation
-{
-	display: flex;
-    flex-direction: column;
-	margin: 5% 10% 5% 5.5%;
-}
-.section-titre-Experiences,.section-titre-formation,.section-titre-Recommandation
-{
+
+
+
+.section-titre-Experiences,
+.section-titre-formation,
+.section-titre-Recommandation {
 	font-size: 2em;
 	text-transform: uppercase;
 	font-family: 'Roboto Slab', serif;
 }
-.section-titre-Experiences 
-{
+
+.section-titre-Experiences {
 	margin: 3.5% 5% 0;
 }
-.Bloc-Formation
-{
-	display: flex;
-	margin-left: 7%;
-    
-}
-.Date-container
-{
-	display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    flex: 0 0 12rem;
-	
-}
-.Date-Ville
-{
+
+
+
+
+
+.Date-Ville {
 	margin-left: 1rem;
 }
-.Intitule-poste
-{
-    text-transform: uppercase;
-    color: #4A4A4A;
-    font-weight: 600;
-    font-size: 1.5rem;
+
+.Intitule-poste {
+	text-transform: uppercase;
+	color: #4A4A4A;
+	font-weight: 600;
+	font-size: 1.5rem;
 }
-.Description-Formation
-{
-	margin: 0% 0% 0% 10%; 
+
+.Description-Formation {
+	margin: 0% 0% 0% 10%;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 }
-.Description-Formation-Experiences
-{
-	margin: 0% 0% 0% 10%; 
+
+.Description-Formation-Experiences {
+	margin: 0% 0% 0% 10%;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 }
+
 .Date-Poste {
-    white-space: nowrap;
+	white-space: nowrap;
 }
-.section-titre-Recommandation
-{
+
+.section-titre-Recommandation {
 	margin: 4.5% 5% 0;
-	
+
 }
-.recommandation 
-{
+
+.recommandation {
 	display: flex;
 	margin: 6% 5% 0%;
 	font-size: 2em;
 	margin-right: 10%;
 	text-transform: uppercase;
 }
-.recommandation-global
-{
+
+.recommandation-global {
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+	justify-content: space-around;
+	align-items: flex-start;
 	margin: 2.5% 0% 0% 0%;
 }
-.recommandation-gauche 
-{
-    justify-content: left;
-    text-transform: none;
-    font-size: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-	
+
+.recommandation-gauche {
+	justify-content: left;
+	text-transform: none;
+	font-size: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+
 }
-.nom-recommandation 
-{
-    color:black;
-    font-weight: 500;
-    font-size: 1rem;
+
+.nom-recommandation {
+	color: black;
+	font-weight: 500;
+	font-size: 1rem;
 }
-.Contact-Mobile
-{
+
+.Contact-Mobile {
 	display: none;
 }
-.Infos-Mobile
-{
+
+.Infos-Mobile {
 	display: none;
 }
-.A-propos-de-moi-Mobile
-{
+
+.A-propos-de-moi-Mobile {
 	display: none;
 }
-.icone-en-bas-Mobile
-{
+
+.icone-en-bas-Mobile {
 	display: none;
 }
-.loisir-Mobile
-{
+
+.loisir-Mobile {
 	display: none;
 }
-.container-icones-mobile
-{
+
+.container-icones-mobile {
 	display: none;
 }
-.cercle-icone-mobile
-{
+
+.cercle-icone-mobile {
 	display: none;
-}	
+}
 
+@media only screen and (max-width: 650px) {
+	body {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 650px)
-{
-	body 
-	{
-		
 		display: flex;
-		background-color: #FECA07;	
+		background-color: #FECA07;
 	}
-	.partie-gauche
-	{
+
+	.partie-gauche {
 		display: none;
 	}
-	.partie-droite
-	{
+
+	.partie-droite {
 		height: 100%;
 		min-width: 100%;
 		text-align: center;
 	}
-	.background-header-color /*gére le fond derriere le titre */
-	{
+
+	.background-header-color
+
+	/*gére le fond derriere le titre */
+		{
 		background-color: #404040;
 		padding: 10% 0% 10% 0%;
 	}
-	.Titre /*gére le h1 "David Chatton" */
-	{
+
+	.Titre
+
+	/*gére le h1 "David Chatton" */
+		{
 		width: 100%;
 		font-size: 2em;
 		margin: 0;
@@ -327,447 +311,506 @@ hr
 		padding: 0;
 		color: #FECA07;
 	}
-	.sous-titre /*gére le h2 "développeur web freelance" */
-	{
+
+	.sous-titre
+
+	/*gére le h2 "développeur web freelance" */
+		{
 		margin-left: 0;
-    	font-size: 1.5em;
+		font-size: 1.5em;
 		color: white;
 	}
-	.background-image-color /*gere la couleur de fond derriere la photo */
-	{
-		background-color: white;	
-	}
-	#photo-mobile
-	{
-		width: 60%;/*pour gérer la largeur */
-		height: auto;
-		border-radius: 50%;
-	    margin: 5% 0% 5% 0%;
-	}
-	.img-responsive
-	{
-		display: none;
-	}
-	.souligner /*supprimer le soulinager sous "developpeur" */
-	{
-		display: none;
-	}
-	.icones-titre /*gére toute les icones de mon site */
-	{
-    margin: 0% 2% 0% 0%;
-    font-size: 1.3rem;
-	}
-	.encadrer
-	{
-		margin: 3%;
-    	padding: 4%;
-    	box-shadow: 0px 0px 8px #90A4AE;
-    	border-radius: 5px;
+
+	.background-image-color
+
+	/*gere la couleur de fond derriere la photo */
+		{
 		background-color: white;
 	}
-	.section-titre-formation
-	{
+
+	#photo-mobile {
+		width: 60%;
+		/*pour gérer la largeur */
+		height: auto;
+		border-radius: 50%;
+		margin: 5% 0% 5% 0%;
+	}
+
+	.img-responsive {
+		display: none;
+	}
+
+	.souligner
+
+	/*supprimer le soulinager sous "developpeur" */
+		{
+		display: none;
+	}
+
+	.icones-titre
+
+	/*gére toute les icones de mon site */
+		{
+		margin: 0% 2% 0% 0%;
+		font-size: 1.3rem;
+	}
+
+	.encadrer {
+		margin: 3%;
+		padding: 4%;
+		box-shadow: 0px 0px 8px #90A4AE;
+		border-radius: 5px;
+		background-color: white;
+	}
+
+	.section-titre-formation {
 		margin: 0%;
 		margin: 0% 0% 3% 0%;
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-	#Logo-Diplome
-	{
+
+	#Logo-Diplome {
 		padding-top: 0.2rem;
-    	margin-right: 1rem;
+		margin-right: 1rem;
 	}
-	.Formation
-	{
+
+	.Formation {
 		font-size: 0.7em;
-    	font-weight: 600;
-    	color: #404040;
+		font-weight: 600;
+		color: #404040;
 		margin: 0%;
 	}
-	.hr
-	{
+
+	.hr {
 		background-color: #FECA07;
-    	width: 90%;
-    	height: 0.15rem;
-    	border: none;
+		width: 90%;
+		height: 0.15rem;
+		border: none;
 	}
-	.Container-Formation /* gere le contenu de mes encadrer*/
-	{
-    display: flex;
-    flex-direction: column;
-    margin:2.5% 5% 2.5% 5%;
+
+	.Container-Formation
+
+	/* gere le contenu de mes encadrer*/
+		{
+		display: flex;
+		flex-direction: column;
+		margin: 2.5% 5% 2.5% 5%;
 	}
-	.Bloc-Formation 
-	{
-    display: flex;
-	flex-direction: column;
-	margin: 0%;
+
+	.Bloc-Formation {
+		display: flex;
+		flex-direction: column;
+		margin: 0%;
 	}
-	.Date-container 
-	{
-    	display: flex;
-    	justify-content: center;
+
+	.Date-container {
+		display: flex;
+		justify-content: center;
 		flex: 0;
 	}
-	#Logo-circle-1
-	{
+
+	#Logo-circle-1 {
 		padding-top: 1.2rem;
 	}
-	#Logo-circle-2
-	{
+
+	#Logo-circle-2 {
 		margin-left: -1rem;
-    	margin-right: 0.3rem;
-    	padding-top: 1.25rem;
+		margin-right: 0.3rem;
+		padding-top: 1.25rem;
 	}
-	#circle-icone-1
-	{
+
+	#circle-icone-1 {
 		padding-top: 1.4rem;
 	}
-	#circle-icone-2
-	{
+
+	#circle-icone-2 {
 		margin-left: -1rem;
-    	margin-right: 0.3rem;
-    	padding-top: 1.4rem;
+		margin-right: 0.3rem;
+		padding-top: 1.4rem;
 	}
-	#circle-icone-3
-	{
+
+	#circle-icone-3 {
 		margin-left: -1rem;
-    	padding-top: 1.4rem;
+		padding-top: 1.4rem;
 	}
-	.Date-Ville 
-	{
-    	margin-left: 2%;
-    	font-size: 1rem;
-    	display: flex;
+
+	.Date-Ville {
+		margin-left: 2%;
+		font-size: 1rem;
+		display: flex;
 	}
-	.Date
-	{
+
+	.Date {
 		margin-right: 0.2rem
 	}
-	.Lieu-1
-	{
+
+	.Lieu-1 {
 		margin-right: -1.2rem;
 	}
-	.Lieu-2
-	{
+
+	.Lieu-2 {
 		margin-right: -1.6rem;
 	}
-	
-	.Description-Formation 
-	{
+
+	.Description-Formation {
 		margin: 0%;
 	}
-	#Margin1
-	{
+
+	#Margin1 {
 		margin: 1em 0% 1em 0%;
 	}
-	#Margin2
-	{
+
+	#Margin2 {
 		margin: 1em 0% 1em 0%;
 	}
-	#Margin3
-	{
+
+	#Margin3 {
 		margin: 1em 0% 1em 0%;
 	}
-	.Codi-One
-	{
-		margin:0%;
+
+	.Codi-One {
+		margin: 0%;
 	}
-	.Intitule-poste
-	{
+
+	.Intitule-poste {
 		text-transform: uppercase;
-    	font-weight: 900;
-    	font-size: 1.2rem;
-    	margin: 0%;
-    	text-align: center;
+		font-weight: 900;
+		font-size: 1.2rem;
+		margin: 0%;
+		text-align: center;
 	}
-	.Description-Poste
-	{
-		margin: 0%;			
+
+	.Description-Poste {
+		margin: 0%;
 	}
-	.Description-Poste-CodiOne
-	{
+	.Biskot{
+		margin: 0% 0% 5% 0%;
+	}
+	.Description-Poste-CodiOne {
 		display: flex;
 		justify-content: center;
 	}
-	.fa,.fas
-	{
+
+	.fa,
+	.fas {
 		font-size: 0.7em;
 	}
-	.section-titre-Experiences
-	{		
-    	margin: 2.5% 0% 2.5% 0%;
+
+	.section-titre-Experiences {
+		margin: 2.5% 0% 2.5% 0%;
 		display: flex;
-    	justify-content: center;
-    	align-items: baseline;
+		justify-content: center;
+		align-items: baseline;
 	}
-	#Logo-Briefcase
-	{
-		margin-left: 20%;
-    	margin-right: -1.5rem;
-	}
-	.Experiences-Professionnelles
-	{
+
+	.Experiences-Professionnelles {
 		font-size: 0.7em;
-    	font-weight: 600;
-    	color: #404040;
-		margin: 0% 18% 0% 0%;
-	}
-	.Description-Formation-Experiences
-	{
+		font-weight: 600;
+		color: #404040;
 		margin: 0%;
 	}
-	.section-titre-Recommandation
-	{
+
+	#Logo-Briefcase {
+		font-size: 0.7em;
+		margin-right: 0.9rem;
+	}
+
+	.Description-Formation-Experiences {
+		margin: 0%;
+	}
+
+	.section-titre-Recommandation {
 		margin: 0%;
 		display: flex;
-    	align-items: center;
-    	justify-content: center;
+		align-items: center;
+		justify-content: center;
 	}
-	#Logo-crayon
-	{
+
+	#Logo-crayon {
 		margin: 0% 4% 0% 0%;
 	}
-	.recommandation-global
-	{
+
+	.recommandation-global {
 		color: black;
 	}
-	.Recommandation
-	{
+
+	.Recommandation {
 		font-size: 0.7em;
-    	font-weight: 600;
-    	color: #404040;
+		font-weight: 600;
+		color: #404040;
 		margin: 0;
-    	
+
 	}
-	.hr-recommandation
-	{
+
+	.hr-recommandation {
 		background-color: #FECA07;
-    	width: 80%;
-    	height: 0.1rem;
-    	margin: 2% 0% 0% 12%;
-    	border: none;
+		width: 80%;
+		height: 0.1rem;
+		margin: 2% 0% 0% 12%;
+		border: none;
 	}
-	.Contact-Mobile
-	{
+
+	.Contact-Mobile {
 		display: block;
 	}
-	h3
-	{
+
+	h3 {
 		font-size: 1.7em;
 	}
-	.Infos-Mobile
-	{
+
+	.Infos-Mobile {
 		display: block;
-    	margin-top: 1.5rem;
-    	margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
 		background-color: #FECA07;
-	
+
 	}
-	.A-propos-de-moi-Mobile
-	{
+
+	.A-propos-de-moi-Mobile {
 		display: block;
 	}
-	.Descriptif
-	{
+
+	.Descriptif {
 		margin: 0% 5% 0% 5%;
 	}
-	.icone-en-bas-Mobile
-	{
+
+	.icone-en-bas-Mobile {
 		display: block;
 	}
-	.loisir-Mobile
-	{
+
+	.loisir-Mobile {
 		display: block;
 	}
-	.container-icones-mobile
-	{
-    	display: flex;
-    	justify-content: space-around;
+
+	.container-icones-mobile {
+		display: flex;
+		justify-content: space-around;
 		padding: 20px;
-		font-size: 2.5em; 
-	}
-	.cercle-icone-mobile
-	{
-
-		display: flex;
-    	justify-content: center;
-   		align-items: center;
-    	height: 4.57rem;
-    	width: 4.57rem;
-    	box-shadow: 0px 0px 8px #404040;
-    	border-radius: 4.57rem;
-    	margin-bottom: 1rem;
-	}	
-
-
-
-
-
-
-
-
-
-
-
-}
-@media screen and (min-width: 450px) and (max-width: 650px)
-{
-	#photo-mobile
-	{
-	width: 40%;/*pour gérer la largeur */
-	height: auto;
-	margin: 5% 0% 5% 0%;
-	}	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 651px) and (max-width: 1024px)
-{
-	body 
-	{
-		display: flex;
-		width: 100%;
-	}
-	.partie gauche
-	{
-		width:35%;
-		height: 100%;
-
-	}
-	.partie droite
-	{
-		width: 65%;
-		height: 100%;
-	}
-	.img-responsive-mobile
-	{
-		display: none;
-	}
-	.Titre
-	{
 		font-size: 2.5em;
-		margin: 0;
-		padding: 2% 0% 0% 0%;
-		font-weight: 500;
-		text-align: center;	
 	}
-	.sous-titre
-	{
-		margin-left: -4px;
-    	font-size: 1.5em;
-    	font-weight: 600;
-		text-align: center;	
+
+	.cercle-icone-mobile {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4.57rem;
+		width: 4.57rem;
+		box-shadow: 0px 0px 8px #404040;
+		border-radius: 4.57rem;
+		margin-bottom: 1rem;
 	}
-	#photo-mobile
-	{
-	height: auto;
-	margin: 5% 0% 5% 0%;
-	max-width: 100%;
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+	#photo-mobile {
+		width: 40%;
+		/*pour gérer la largeur */
+		height: auto;
+		margin: 5% 0% 5% 0%;
 	}
 }
 
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+	body {
+		display: flex;
+		min-width: 150%;
+		min-height: 100%;
+	}
 
+	.partie-gauche {
+		width: 40%;
+		height: 330vh;
+		background-color: #FECA07;
+		display: flex;
+		flex-direction: column;
+	}
 
+	#photo-desktop {
+		border-radius: 50%;
+		width: 80%;
+		margin: 10%;
+	}
 
+	h3 {
+		text-align: center;
+		background-color: #404040;
+		color: #FECA07;
+		padding: 10% 0% 10% 0%;
+		font-family: 'Cookie', cursive;
+		font-size: 1.7rem;
+		margin: 0%;
+	}
+	h3>p {
+		margin: 0%;
+	}
+	.Infos {
+		margin: 8% 0% 8% 10%;
+		margin-bottom: 1.5rem;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width:1024px) and (max-width:1600px)
-{
+	.A-propos-de-moi {
+		display: flex;
+    	flex-direction: column;
+}	
 	
-	.img-responsive-mobile
-	{
+	.A-propos-de-moi p {
+		padding-bottom: 100%;
+    	padding-top: 10%;
+    	display: flex;
+    	text-align: center;
+	}
+
+	.container-icones {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 5rem;
+		font-size: 2.5em;
+	}
+
+	.cercle-icone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4.57rem;
+		width: 4.57rem;
+		border: 3px solid black;
+		border-radius: 4.57rem;
+		margin-bottom: 1rem;
+	}
+
+	.fa,
+	.fas {
+		font-weight: 900;
+	}
+
+	.partie-droite {
+		height: 100%;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img-responsive-mobile {
 		display: none;
 	}
-	
-	
-}
 
-
-
-@media all and (min-width:1601px)
-{
-.Titre
-	{
+	.Titre {
+		font-size: 3rem;
+		margin: 0;
+		padding: 20% 0% 0% 0%;
+		font-weight: 600;
 		text-align: center;
-		font-size: 75px;
-		margin: 0% 0% 0% 0%;
 	}
-.sous-titre
-	{
+	strong {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sous-titre {
 		margin-left: -4px;
-    	font-size: 43px;
-    	font-weight: 600;
-		text-align: center;	
+		font-size: 1.7em;
+		font-weight: 600;
+		text-align: center;
 	}
 	.souligner
 	{
 		display: none;
 	}
-	.section-titre
-	{
-		text-align: center;	
+	.section-titre-formation {
+		margin:  35% 0% 0% 0%;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
 	}
-	.img-responsive-mobile
-	{
+	.Formation {
+		    margin: 0%;
+	}
+	hr{
+		background-color: #FECA07;
+    	width: 80%;
+    	height: 0.1rem;
+    	border: none;
+    	display: flex;
+    	align-items: center;
+	}
+	.Container-Formation {
+		display: flex;
+    	flex-direction: column;
+   		margin: 10% 10% 5% 3%;
+}
+	.Bloc-Formation {
+    	display: flex;
+    	text-align: center;
+    	justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+	
+	.Date-container {
+    display: flex;
+    justify-content: center;
+    flex: 0;
+    flex-direction: column;
+    text-align: center;
+    align-self: baseline;
+    margin-top: 1.4%;
+	}
+	.Description-Formation {
+    margin: 0% 0% 0% 6%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+	}
+	.Intitule-poste {
+    text-transform: uppercase;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+	}
+	#Description-Poste-Tablette {
+		padding-bottom: 5%;
+	}
+	.Date {
+		white-space: nowrap;
+	}
+	.section-titre-Experiences {
+		text-align: center;
+	}
+	.Experiences-Professionnelles{
+		margin: 0;
+	}
+	.Description-Formation-Experiences {
+    margin: 0% 0% 0% 8%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+	}
+	#Margin1 {
+		margin-right: 15%;
+	}
+	.section-titre-Recommandation {
+		margin: 4.5% 5% 0;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+	.Recommandation {
+		margin:0;
+	}
+	
+	
+	
+	
+	
+}
+
+@media all and (min-width:1024px) and (max-width:1600px) {
+	.img-responsive-mobile {
 		display: none;
 	}
-	
-	
 }
