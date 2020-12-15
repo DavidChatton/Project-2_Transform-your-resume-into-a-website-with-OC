@@ -153,6 +153,9 @@ hr {
 .Date-Ville {
 	margin-left: 1rem;	
 }
+.Date {
+	white-space: nowrap;
+}
 .Description-Formation {
 	margin: 0% 0% 0% 10%;
 	display: flex;
@@ -312,11 +315,6 @@ hr {
 		border-radius: 50%;
 		margin: 5% 0% 5% 0%;
 	}
-
-	.img-responsive {
-		display: none;
-	}
-
 	.souligner
 
 	/*supprimer le soulinager sous "developpeur" */
@@ -490,7 +488,7 @@ hr {
 	}
 
 	#Logo-Briefcase {
-		font-size: 0.7em;
+		font-size: 1em;
 		margin-right: 0.9rem;
 	}
 
@@ -592,15 +590,10 @@ hr {
 }
 
 @media screen and (min-width: 651px) and (max-width: 1024px) {
-	body {
-		display: flex;
-		min-width: 150%;
-		min-height: 100%;
-	}
-
+	
 	.partie-gauche {
-		width: 40%;
-		height: 330vh;
+		width: 30%;
+		height: 200vh;
 		background-color: #FECA07;
 		display: flex;
 		flex-direction: column;
@@ -618,14 +611,11 @@ hr {
 		color: #FECA07;
 		padding: 10% 0% 10% 0%;
 		font-family: 'Cookie', cursive;
-		font-size: 1.7rem;
-		margin: 0%;
-	}
-	h3>p {
+		font-size: 2.5rem;
 		margin: 0%;
 	}
 	.Infos {
-		margin: 8% 0% 8% 10%;
+		margin: 8% 0% 8% 5%;
 		margin-bottom: 1.5rem;
 	}
 
@@ -637,28 +627,32 @@ hr {
 	.A-propos-de-moi p {
 		padding-bottom: 100%;
     	padding-top: 10%;
-    	display: flex;
     	text-align: center;
+		margin: 0% 5% 0% 0%;
 	}
 
 	.container-icones {
 		display: flex;
-		justify-content: space-around;
-		padding-top: 5rem;
-		font-size: 2.5em;
+    	justify-content: space-between;
+    	flex-direction: column;
+    	align-items: center;
+    	padding-top: 5rem;
+    	font-size: 2.5em;
 	}
 
 	.cercle-icone {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 4.57rem;
-		width: 4.57rem;
+		height: 7.57rem;
+		width: 7.57rem;
 		border: 3px solid black;
 		border-radius: 4.57rem;
-		margin-bottom: 1rem;
+		margin-bottom: 4rem;
 	}
-
+	.icones-loisir {
+		font-size: 3rem;
+	}
 	.fa,
 	.fas {
 		font-weight: 900;
@@ -666,7 +660,7 @@ hr {
 
 	.partie-droite {
 		height: 100%;
-		width: 60%;
+		width: 70%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -678,7 +672,7 @@ hr {
 	.Titre {
 		font-size: 3rem;
 		margin: 0;
-		padding: 20% 0% 0% 0%;
+		padding: 10% 0% 0% 0%;
 		font-weight: 600;
 		text-align: center;
 	}
@@ -698,7 +692,7 @@ hr {
 		display: none;
 	}
 	.section-titre-formation {
-		margin:  35% 0% 0% 0%;
+		margin:  10% 0% 0% 0%;
 		display: flex;
     	justify-content: center;
     	align-items: center;
@@ -717,7 +711,7 @@ hr {
 	.Container-Formation {
 		display: flex;
     	flex-direction: column;
-   		margin: 10% 10% 5% 3%;
+   		margin: 6% 2% 0% 3%;
 }
 	.Bloc-Formation {
     	display: flex;
@@ -729,10 +723,7 @@ hr {
 	
 	.Date-container {
     display: flex;
-    justify-content: center;
     flex: 0;
-    flex-direction: column;
-    text-align: center;
     align-self: baseline;
     margin-top: 1.4%;
 	}
