@@ -12,17 +12,20 @@ body {
 	width: 30%;
 	background-color: #FECA07;
 	font-size: 1rem;
-	height: 100%;
+	min-height: 100%;
 }
+
 .responsive-picture {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
+
 #photo-desktop {
 	border-radius: 50%;
 	width: 75%;
 	margin: 3% 12%;
 }
+
 h3 {
 	text-align: center;
 	/*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
@@ -34,11 +37,13 @@ h3 {
 	font-family: 'Cookie', cursive;
 	font-size: 1.8rem;
 }
+
 .Infos {
 	margin-left: 10%;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 }
+
 .A-propos-de-moi {
 	display: flex;
 	flex-direction: column;
@@ -74,10 +79,12 @@ h3 {
 	border-radius: 4.57rem;
 	margin-bottom: 1rem;
 }
+
 .partie-droite {
 	height: 100%;
 	width: 70%
 }
+
 .Titre {
 	margin: 0% 0% 0% 10%;
 	padding-top: 10%;
@@ -88,17 +95,17 @@ h3 {
 	font-style: normal;
 	font-size: 50px;
 }
+
 strong {
 	color: #FECA07;
 }
+
 .sous-titre {
 	margin: 1% 0% 0% 10%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 }
-.img-responsive-mobile {
-	display: none
-}
+
 .souligner {
 	background-color: #FECA07;
 	margin: 0% 0% 2% 10%;
@@ -113,20 +120,25 @@ strong {
 	text-transform: uppercase;
 	font-family: 'Roboto Slab', serif;
 }
+
 .section-titre-formation {
 	margin: 21.5% 10% 0;
 	display: flex;
 	align-items: baseline;
 }
+
 .icone_jaune {
 	color: #FECA07;
 }
+
 .icones-titre {
 	margin: 0% 2% 0% 0%;
 }
+
 .Formation {
 	margin: 0;
 }
+
 hr {
 	background-color: #FECA07;
 	width: 80%;
@@ -134,68 +146,86 @@ hr {
 	margin: 1% 0% 0% 10%;
 	border: none;
 }
+
 .Container-Formation {
 	display: flex;
 	flex-direction: column;
 	margin: 5% 5% 5% 5.5%;
 }
+
 .Bloc-Formation {
 	display: flex;
 	margin-left: 6%;
 
 }
+
 .Date-container {
 	display: flex;
 	align-items: baseline;
 	flex-wrap: nowrap;
 	flex: 0 0 12rem;
 }
+
 .Date-Ville {
-	margin-left: 1rem;	
+	margin-left: 1rem;
 }
+
 .Date {
 	white-space: nowrap;
 }
+
 .Description-Formation {
-	margin: 0% 0% 0% 10%;
+	margin: 0% 0% 0% 11%;
 	display: flex;
 	flex-direction: column;
 }
+
 .Intitule-poste {
 	text-transform: uppercase;
 	color: #4A4A4A;
 	font-weight: 600;
 	font-size: 1.5rem;
 }
-#Description-Poste-Tablette {
-	
-}
+
+#Description-Poste-Tablette {}
+
 .section-titre-Experiences {
 	margin: 3.5% 5% 0;
 }
+
 .Experiences-Professionnelles {
-	    display: flex;
-    	align-items: baseline;
-    	padding-left: 6%;
-   	 	margin: 0;
+	padding-left: 6%;
+	margin: 0;
 }
-.Description-Formation-Experiences {
-	margin: 0% 0% 0% 10%;
+
+.Description-Experiences-Freelance {
+	margin: 0% 0% 0% 8%;
 	display: flex;
 	flex-direction: column;
 }
+
+.Description-Experiences-Dev {
+	margin: 0% 0% 0% 7%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Description-Experiences-WebJunior {
+	margin: 0% 0% 0% 6%;
+	display: flex;
+	flex-direction: column;
+}
+
 .section-titre-Recommandation {
 	margin: 4.5% 10% 0;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
-.recommandation {
-	display: flex;
-	margin: 6% 5% 0%;
-	font-size: 2em;
-	margin-right: 10%;
-	text-transform: uppercase;
+
+.Recommandation {
+	margin: 0;
 }
+
 .hr-recommandation {
 	background-color: #FECA07;
 	width: 80%;
@@ -203,6 +233,7 @@ hr {
 	margin: 1% 0% 0% 10%;
 	border: none;
 }
+
 .recommandation-global {
 	display: flex;
 	flex-wrap: wrap;
@@ -210,6 +241,7 @@ hr {
 	align-items: flex-start;
 	margin: 2.5% 0% 0% 0%;
 }
+
 .recommandation-gauche {
 	justify-content: left;
 	text-transform: none;
@@ -221,6 +253,7 @@ hr {
 .Date-Poste {
 	white-space: nowrap;
 }
+
 .nom-recommandation {
 	color: black;
 	font-weight: 500;
@@ -253,6 +286,16 @@ hr {
 
 .cercle-icone-mobile {
 	display: none;
+}
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+	
+.A-propos-de-moi p {
+    margin-left: 2.5rem;
+    margin-right: 10%;
+    margin-top: 1.5rem;
+    padding-bottom: 270%;
+}
+		
 }
 
 @media only screen and (max-width: 650px) {
@@ -315,6 +358,7 @@ hr {
 		border-radius: 50%;
 		margin: 5% 0% 5% 0%;
 	}
+
 	.souligner
 
 	/*supprimer le soulinager sous "developpeur" */
@@ -460,9 +504,11 @@ hr {
 	.Description-Poste {
 		margin: 0%;
 	}
-	.Biskot{
+
+	.Biskot {
 		margin: 0% 0% 5% 0%;
 	}
+
 	.Description-Poste-CodiOne {
 		display: flex;
 		justify-content: center;
@@ -543,6 +589,10 @@ hr {
 
 	}
 
+	.logo-secondaire.fa fa {
+		display: none;
+	}
+
 	.A-propos-de-moi-Mobile {
 		display: block;
 	}
@@ -577,7 +627,6 @@ hr {
 		border-radius: 4.57rem;
 		margin-bottom: 1rem;
 	}
-
 }
 
 @media screen and (min-width: 450px) and (max-width: 650px) {
@@ -590,7 +639,9 @@ hr {
 }
 
 @media screen and (min-width: 651px) and (max-width: 1024px) {
-	
+
+
+
 	.partie-gauche {
 		width: 30%;
 		height: 200vh;
@@ -601,8 +652,9 @@ hr {
 
 	#photo-desktop {
 		border-radius: 50%;
-		width: 80%;
-		margin: 10%;
+		width: 110%;
+		margin-top: 10%;
+		margin-bottom: -10%;
 	}
 
 	h3 {
@@ -612,8 +664,8 @@ hr {
 		padding: 10% 0% 10% 0%;
 		font-family: 'Cookie', cursive;
 		font-size: 2.5rem;
-		margin: 0%;
 	}
+
 	.Infos {
 		margin: 8% 0% 8% 5%;
 		margin-bottom: 1.5rem;
@@ -621,38 +673,38 @@ hr {
 
 	.A-propos-de-moi {
 		display: flex;
-    	flex-direction: column;
-}	
-	
+		flex-direction: column;
+	}
+
 	.A-propos-de-moi p {
 		padding-bottom: 100%;
-    	padding-top: 10%;
-    	text-align: center;
+		padding-top: 10%;
+		text-align: center;
 		margin: 0% 5% 0% 0%;
 	}
 
 	.container-icones {
 		display: flex;
-    	justify-content: space-between;
-    	flex-direction: column;
-    	align-items: center;
-    	padding-top: 5rem;
-    	font-size: 2.5em;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		font-size: 2.5em;
 	}
-
 	.cercle-icone {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 7.57rem;
-		width: 7.57rem;
+		height: 4.57rem;
+		width: 4.57rem;
 		border: 3px solid black;
 		border-radius: 4.57rem;
-		margin-bottom: 4rem;
+		margin-bottom: 2.5rem;
 	}
+
 	.icones-loisir {
 		font-size: 3rem;
 	}
+
 	.fa,
 	.fas {
 		font-weight: 900;
@@ -660,7 +712,7 @@ hr {
 
 	.partie-droite {
 		height: 100%;
-		width: 70%;
+		width: 60%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -676,6 +728,7 @@ hr {
 		font-weight: 600;
 		text-align: center;
 	}
+
 	strong {
 		display: flex;
 		flex-direction: column;
@@ -687,97 +740,114 @@ hr {
 		font-weight: 600;
 		text-align: center;
 	}
-	.souligner
-	{
+
+	.souligner {
 		display: none;
 	}
+
 	.section-titre-formation {
-		margin:  10% 0% 0% 0%;
+		margin: 10% 0% 0% 0%;
 		display: flex;
-    	justify-content: center;
-    	align-items: center;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.Formation {
-		    margin: 0%;
+		margin: 0%;
 	}
-	hr{
+
+	hr {
 		background-color: #FECA07;
-    	width: 80%;
-    	height: 0.1rem;
-    	border: none;
-    	display: flex;
-    	align-items: center;
+		width: 80%;
+		height: 0.1rem;
+		border: none;
+		display: flex;
+		align-items: center;
 	}
+
 	.Container-Formation {
 		display: flex;
-    	flex-direction: column;
-   		margin: 6% 2% 0% 3%;
-}
+		flex-direction: column;
+		margin: 6% 2% 0% 3%;
+	}
+
 	.Bloc-Formation {
-    	display: flex;
-    	text-align: center;
-    	justify-content: center;
+		display: flex;
+		text-align: center;
+		justify-content: center;
 		align-items: center;
 		margin: 0;
 	}
-	
+
 	.Date-container {
-    display: flex;
-    flex: 0;
-    align-self: baseline;
-    margin-top: 1.4%;
+		display: flex;
+		flex: 0;
+		align-self: baseline;
+		margin-top: 1.4%;
+	}
+	#Logo-circle-1,#Logo-circle-2,#circle-icone-1,#circle-icone-2,#circle-icone-3{
+	display: none;
 	}
 	.Description-Formation {
-    margin: 0% 0% 0% 6%;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+		margin: 0% 0% 0% 6%;
+		display: flex;
+		flex-direction: column;
+		width: 80%;
 	}
+
 	.Intitule-poste {
-    text-transform: uppercase;
-    color: #4A4A4A;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 0;
+		text-transform: uppercase;
+		color: #4A4A4A;
+		font-weight: 600;
+		font-size: 1.5rem;
+		margin: 0;
 	}
+
 	#Description-Poste-Tablette {
 		padding-bottom: 5%;
 	}
+
 	.Date {
-		white-space: nowrap;
+		margin: 0;
 	}
+
 	.section-titre-Experiences {
 		text-align: center;
 	}
-	.Experiences-Professionnelles{
+
+	.Experiences-Professionnelles {
 		margin: 0;
 	}
+
 	.Description-Formation-Experiences {
-    margin: 0% 0% 0% 8%;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+		margin: 0% 0% 0% 8%;
+		display: flex;
+		flex-direction: column;
+		width: 60%;
 	}
+
 	#Margin1 {
 		margin-right: 15%;
 	}
+
 	.section-titre-Recommandation {
 		margin: 4.5% 5% 0;
-    	display: flex;
-    	justify-content: center;
-    	align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.Recommandation {
-		margin:0;
+		margin: 0;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }
 
-@media all and (min-width:1024px) and (max-width:1600px) {
+@media (min-width:1024px) and (max-width:2000px) {
 	.img-responsive-mobile {
 		display: none;
 	}
