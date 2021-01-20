@@ -8,6 +8,7 @@ body {
 	margin: 0%
 		/* Me permet de ne pas avoir de marge */
 }
+
 .partie-gauche {
 	width: 30%;
 	background-color: #FECA07;
@@ -15,9 +16,10 @@ body {
 	min-height: 100%;
 }
 
-.responsive-picture {
+.responsive-picture { /*gere  mon image*/
 	display: flex;
 	justify-content: center;
+	
 }
 
 #photo-desktop {
@@ -159,14 +161,14 @@ hr {
 
 }
 
-.Date-container {
+.Date-container { /* gere la date,le lieu et le logo */
 	display: flex;
 	align-items: baseline;
 	flex-wrap: nowrap;
 	flex: 0 0 12rem;
 }
 
-.Date-Ville {
+.Date-Ville { /* gere la date,le lieu */
 	margin-left: 1rem;
 }
 
@@ -186,9 +188,6 @@ hr {
 	font-weight: 600;
 	font-size: 1.5rem;
 }
-
-#Description-Poste-Tablette {}
-
 .section-titre-Experiences {
 	margin: 3.5% 5% 0;
 }
@@ -287,18 +286,21 @@ hr {
 .cercle-icone-mobile {
 	display: none;
 }
+
 @media screen and (min-width: 1025px) and (max-width: 1500px) {
-	
-.A-propos-de-moi p {
-    margin-left: 2.5rem;
-    margin-right: 10%;
-    margin-top: 1.5rem;
-    padding-bottom: 270%;
-}
-		
+
+	.A-propos-de-moi p {
+		margin-left: 2.5rem;
+		margin-right: 10%;
+		margin-top: 1.5rem;
+		padding-bottom: 270%;
+	}
+
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) 
+/* Gere le mode Mobile */
+{
 	body {
 
 		display: flex;
@@ -477,18 +479,9 @@ hr {
 		margin: 0%;
 	}
 
-	#Margin1 {
+	#Margin1, #Margin2, #Margin3 {
 		margin: 1em 0% 1em 0%;
 	}
-
-	#Margin2 {
-		margin: 1em 0% 1em 0%;
-	}
-
-	#Margin3 {
-		margin: 1em 0% 1em 0%;
-	}
-
 	.Codi-One {
 		margin: 0%;
 	}
@@ -629,7 +622,7 @@ hr {
 	}
 }
 
-@media screen and (min-width: 450px) and (max-width: 650px) {
+@media screen and (min-width: 450px) and (max-width: 700px) {
 	#photo-mobile {
 		width: 40%;
 		/*pour gérer la largeur */
@@ -638,21 +631,23 @@ hr {
 	}
 }
 
-@media screen and (min-width: 651px) and (max-width: 1024px) {
+@media screen and (min-width: 701px) and (max-width: 1024px)
+/* Gere le mode Tablette */
+{
 
 
 
 	.partie-gauche {
 		width: 30%;
-		height: 200vh;
+		height: 210vh;
 		background-color: #FECA07;
 		display: flex;
 		flex-direction: column;
 	}
 
 	#photo-desktop {
-		border-radius: 50%;
-		width: 110%;
+		border-radius: 100%;
+		width: 140%;
 		margin-top: 10%;
 		margin-bottom: -10%;
 	}
@@ -669,6 +664,7 @@ hr {
 	.Infos {
 		margin: 8% 0% 8% 5%;
 		margin-bottom: 1.5rem;
+		padding: 5px 20px;
 	}
 
 	.A-propos-de-moi {
@@ -677,8 +673,7 @@ hr {
 	}
 
 	.A-propos-de-moi p {
-		padding-bottom: 100%;
-		padding-top: 10%;
+		padding: 20px 40px;
 		text-align: center;
 		margin: 0% 5% 0% 0%;
 	}
@@ -690,15 +685,16 @@ hr {
 		align-items: center;
 		font-size: 2.5em;
 	}
+
 	.cercle-icone {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 4.57rem;
-		width: 4.57rem;
+		height: 6.57rem;
+		width: 6.57rem;
 		border: 3px solid black;
 		border-radius: 4.57rem;
-		margin-bottom: 2.5rem;
+		margin-bottom: 4.5rem;
 	}
 
 	.icones-loisir {
@@ -714,6 +710,7 @@ hr {
 		height: 100%;
 		width: 60%;
 		display: flex;
+		padding: 5%;
 		flex-direction: column;
 	}
 
@@ -746,7 +743,7 @@ hr {
 	}
 
 	.section-titre-formation {
-		margin: 10% 0% 0% 0%;
+		margin: 19% 0% 0% 0%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -773,23 +770,28 @@ hr {
 
 	.Bloc-Formation {
 		display: flex;
-		text-align: center;
 		justify-content: center;
-		align-items: center;
 		margin: 0;
+		margin-top: 1.5%;
 	}
 
 	.Date-container {
 		display: flex;
 		flex: 0;
 		align-self: baseline;
-		margin-top: 1.4%;
+		margin-top: 1.2%;
 	}
-	#Logo-circle-1,#Logo-circle-2,#circle-icone-1,#circle-icone-2,#circle-icone-3{
-	display: none;
+
+	#Logo-circle-1,
+	#Logo-circle-2,
+	#circle-icone-1,
+	#circle-icone-2,
+	#circle-icone-3 {
+		display: none;
 	}
+
 	.Description-Formation {
-		margin: 0% 0% 0% 6%;
+		margin: 0% 0% 0% 11%;
 		display: flex;
 		flex-direction: column;
 		width: 80%;
@@ -807,8 +809,13 @@ hr {
 		padding-bottom: 5%;
 	}
 
+	.Date-Ville {
+		margin: 0;
+	}
+
 	.Date {
 		margin: 0;
+		white-space: normal;
 	}
 
 	.section-titre-Experiences {
@@ -826,8 +833,17 @@ hr {
 		width: 60%;
 	}
 
-	#Margin1 {
-		margin-right: 15%;
+	.Description-Experiences-Freelance,
+	.Description-Experiences-Dev {
+		margin: 0% 0% 0% 11%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Description-Experiences-WebJunior {
+		display: flex;
+		flex-direction: column;
+		margin: 0% 0% 0% 7.5%;
 	}
 
 	.section-titre-Recommandation {
@@ -841,10 +857,16 @@ hr {
 		margin: 0;
 	}
 
-
-
-
-
+	.recommandation-global {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 7.5% 0% 0% 0%;
+		text-align: center;
+	}
+	.recommandation-droite {
+		margin-top: 5%; 
+	}
 }
 
 @media (min-width:1024px) and (max-width:2000px) {
